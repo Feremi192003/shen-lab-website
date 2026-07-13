@@ -1,0 +1,56 @@
+[
+  {
+    "year": 2024,
+    "type": "Drug design",
+    "title": "Aiding the design of next-generation RAF inhibitors",
+    "authors": "Clayton et al.",
+    "journal": "eLife",
+    "url": "https://www.computchem.org/publications",
+    "featured": true
+  },
+  {
+    "year": 2024,
+    "type": "Machine learning",
+    "title": "Machine-learning models for proteome-wide covalent ligandability",
+    "authors": "Liu et al.",
+    "journal": "JACS Au",
+    "url": "https://www.computchem.org/publications",
+    "featured": true
+  },
+  {
+    "year": 2023,
+    "type": "Materials",
+    "title": "Direct observation of chitin self-assembly in silico",
+    "authors": "Romany et al.",
+    "journal": "Chemistry of Materials",
+    "url": "https://www.computchem.org/publications",
+    "featured": true
+  },
+  {
+    "year": 2023,
+    "type": "Drug design",
+    "title": "Effective quantum descriptors for Michael acceptors",
+    "authors": "Liu et al.",
+    "journal": "Journal of Chemical Information and Modeling",
+    "url": "https://www.computchem.org/publications",
+    "featured": false
+  },
+  {
+    "year": 2023,
+    "type": "Drug design",
+    "title": "Toward covalently drugging ERK pathway kinases",
+    "authors": "Romany et al.",
+    "journal": "Journal of Chemical Information and Modeling",
+    "url": "https://www.computchem.org/publications",
+    "featured": false
+  },
+  {
+    "year": 2022,
+    "type": "Methods",
+    "title": "GPU all-atom constant-pH molecular dynamics in Amber",
+    "authors": "Harris and Liu et al.",
+    "journal": "Journal of Chemical Theory and Computation",
+    "url": "https://www.computchem.org/publications",
+    "featured": false
+  }
+]

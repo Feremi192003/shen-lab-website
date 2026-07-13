@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Constant-pH molecular dynamics research in the Shen Laboratory.">
+  <meta name="description" content="Constant-pH molecular dynamics research in the Shen Laboratory at the University of Maryland.">
+  <meta name="theme-color" content="#071d36">
+  <meta property="og:title" content="Constant-pH molecular dynamics | Shen Laboratory">
+  <meta property="og:description" content="Constant-pH molecular dynamics research in the Shen Laboratory at the University of Maryland.">
+  <meta property="og:type" content="website">
   <title>Constant-pH molecular dynamics | Shen Laboratory</title>
-  <link rel="stylesheet" href="../css/styles.css?v=2">
-  <script src="../js/script.js?v=2" defer></script>
+  <link rel="stylesheet" href="../css/styles.css?v=4">
+  
+  <script src="../js/script.js?v=4" defer></script>
+  
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -14,7 +20,9 @@
 <header class="site-header">
   <div class="container nav-container">
     <a class="site-logo" href="../index.html" aria-label="Shen Laboratory home">
-      <span class="logo-mark" aria-hidden="true">S</span>
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+      </span>
       <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
@@ -22,22 +30,55 @@
     </button>
     <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
       <a href="../index.html">Home</a>
-<a href="../research.html" aria-current="page">Research</a>
-<a href="../people.html">People</a>
-<a href="../publications.html">Publications</a>
-<a href="../resources.html">Resources</a>
-<a href="../news.html">News</a>
-<a href="../openings.html">Join Us</a>
-<a href="../contact.html">Contact</a>
+      <a href="../research.html" aria-current="page">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../news.html">News</a>
+      <a href="../openings.html">Join Us</a>
+      <a href="../contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="main-content">
 
-<section class="page-hero"><div class="container narrow"><p class="eyebrow">Research area</p><h1>Constant-pH molecular dynamics</h1><p class="lead">Capturing proton-coupled molecular behavior</p></div></section>
-<section class="section"><div class="container split-layout"><div><h2>Overview</h2></div><div><p class="lead">Protonation states can change as proteins move, ligands bind, or environments shift. We develop constant-pH molecular dynamics approaches that allow protonation and conformation to evolve together.</p><ul class="feature-list"><li>GPU-accelerated all-atom CpHMD</li><li>Replica-exchange strategies</li><li>Proton-coupled conformational dynamics</li><li>Applications to enzymes, receptors, and materials</li></ul></div></div></section>
-<section class="section section-tint"><div class="container"><div class="section-heading"><div><p class="eyebrow">Explore further</p><h2>Related lab content</h2></div></div><div class="three-column"><a class="link-panel" href="../publications.html"><strong>Publications</strong><span>See papers related to this area →</span></a><a class="link-panel" href="../resources.html"><strong>Resources</strong><span>Explore software, databases, and servers →</span></a><a class="link-panel" href="../contact.html"><strong>Collaborate</strong><span>Contact the lab about this work →</span></a></div></div></section>
+<section class="research-detail-hero detail-cphmd">
+  <div class="container research-detail-grid">
+    <div>
+      <a class="back-link" href="../research.html">← All research areas</a>
+      <p class="eyebrow eyebrow-light">Method development</p>
+      <h1>Constant-pH molecular dynamics</h1>
+      <p class="research-statement">A molecular simulation should respond when the solution pH changes.</p>
+    </div>
+    <div class="research-hero-visual"><svg viewBox="0 0 520 420" role="img" aria-label="Constant-pH simulation concept"><g class="rv-bonds"><path d="M75 240 174 112 287 176 414 92M174 112l28 206 85-142 91 158"/></g><g class="rv-nodes"><circle cx="75" cy="240" r="18"/><circle cx="174" cy="112" r="26"/><circle cx="202" cy="318" r="15"/><circle cx="287" cy="176" r="34"/><circle cx="378" cy="334" r="23"/><circle cx="414" cy="92" r="17"/></g><path class="rv-orbit" d="M105 294c86 80 264 64 328-48"/><circle class="rv-proton" cx="0" cy="0" r="9"/></svg></div>
+  </div>
+</section>
+<section class="section research-overview">
+  <div class="container editorial-intro">
+    <div class="section-kicker"><span>Overview</span></div>
+    <div>
+      <p class="lead">Continuous constant-pH molecular dynamics (CpHMD) couples protonation-state sampling to conformational dynamics. Instead of assigning every ionizable group a fixed state before a simulation begins, CpHMD allows those states to evolve with molecular structure and environment.</p>
+      <blockquote>How can we build an accurate, reliable, and computationally efficient pH-stat for biomolecular simulation?</blockquote>
+      <div class="system-tags"><span>Benchmark proteins</span><span>Enzymes and proteases</span><span>Membrane proteins</span><span>Ligand–protein complexes</span></div>
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">Research program</p><h2>What we investigate</h2></div></div>
+    <div class="research-pillars"><article><span>01</span><h3>Implicit-solvent CpHMD</h3><p>GB-Neck2 methods enable efficient pKa prediction and proton-coupled conformational sampling on CPUs and GPUs.</p></article><article><span>02</span><h3>All-atom explicit solvent</h3><p>Hybrid-solvent, generalized-reaction-field, and particle-mesh-Ewald formulations increase physical realism.</p></article><article><span>03</span><h3>Enhanced sampling</h3><p>pH replica exchange and asynchronous exchange improve convergence across coupled protonation and conformational landscapes.</p></article><article><span>04</span><h3>Community software</h3><p>Methods are implemented and disseminated through widely used molecular-dynamics packages, including Amber and CHARMM.</p></article></div>
+  </div>
+</section>
+<section class="section selected-papers-section">
+  <div class="container">
+    <div class="section-heading section-heading-wide"><div><p class="eyebrow">Selected publications</p><h2>Key work in this area.</h2></div><a class="arrow-link" href="../publications.html">Complete publication library <span>↗</span></a></div>
+    <div class="selected-paper-list"><a href="https://doi.org/10.1021/acs.jctc.2c00586"><span>2022</span><strong>GPU-Accelerated All-atom Particle-Mesh Ewald Continuous Constant pH Molecular Dynamics in Amber</strong><i>↗</i></a><a href="https://doi.org/10.33011/livecoms.4.1.1563"><span>2022</span><strong>A Guide to the Continuous Constant pH Molecular Dynamics Methods in Amber and CHARMM</strong><i>↗</i></a><a href="https://doi.org/10.1021/acs.jcim.9b00754"><span>2019</span><strong>GPU-accelerated implementation of continuous constant pH molecular dynamics in Amber</strong><i>↗</i></a></div>
+  </div>
+</section>
+<section class="section next-research">
+  <div class="container next-research-inner"><div><p class="eyebrow eyebrow-light">Collaborate</p><h2>Working on a related molecular problem?</h2></div><a class="button button-gold" href="../contact.html">Contact the lab</a></div>
+</section>
 
 </main>
 
@@ -45,15 +86,32 @@
   <div class="container footer-grid">
     <div>
       <a class="site-logo footer-logo" href="../index.html">
-        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+        </span>
         <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
       </a>
       <p>Computational chemistry, molecular simulation, and data science for biomedical discovery and materials innovation.</p>
     </div>
-    <div><h2>Explore</h2><a href="../research.html">Research</a><a href="../people.html">People</a><a href="../publications.html">Publications</a><a href="../resources.html">Resources</a></div>
-    <div><h2>Connect</h2><a href="../news.html">News</a><a href="../openings.html">Open positions</a><a href="../contact.html">Contact the lab</a><a href="https://www.umaryland.edu/">University of Maryland</a></div>
+    <div>
+      <h2>Explore</h2>
+      <a href="../research.html">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../resources.html">Resources</a>
+    </div>
+    <div>
+      <h2>Connect</h2>
+      <a href="../news.html">News</a>
+      <a href="../openings.html">Open positions</a>
+      <a href="../contact.html">Contact the lab</a>
+      <a href="https://www.pharmacy.umaryland.edu/">School of Pharmacy</a>
+    </div>
   </div>
-  <div class="container footer-bottom"><span>© <span data-current-year></span> Shen Laboratory.</span><span>Built for clarity, accessibility, and scientific communication.</span></div>
+  <div class="container footer-bottom">
+    <span>© <span data-current-year></span> Shen Laboratory.</span>
+    <span>University of Maryland School of Pharmacy</span>
+  </div>
 </footer>
 
 </body>

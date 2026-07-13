@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Materials design research in the Shen Laboratory.">
+  <meta name="description" content="Materials design research in the Shen Laboratory at the University of Maryland.">
+  <meta name="theme-color" content="#071d36">
+  <meta property="og:title" content="Materials design | Shen Laboratory">
+  <meta property="og:description" content="Materials design research in the Shen Laboratory at the University of Maryland.">
+  <meta property="og:type" content="website">
   <title>Materials design | Shen Laboratory</title>
-  <link rel="stylesheet" href="../css/styles.css?v=2">
-  <script src="../js/script.js?v=2" defer></script>
+  <link rel="stylesheet" href="../css/styles.css?v=4">
+  
+  <script src="../js/script.js?v=4" defer></script>
+  
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -14,7 +20,9 @@
 <header class="site-header">
   <div class="container nav-container">
     <a class="site-logo" href="../index.html" aria-label="Shen Laboratory home">
-      <span class="logo-mark" aria-hidden="true">S</span>
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+      </span>
       <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
@@ -22,22 +30,55 @@
     </button>
     <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
       <a href="../index.html">Home</a>
-<a href="../research.html" aria-current="page">Research</a>
-<a href="../people.html">People</a>
-<a href="../publications.html">Publications</a>
-<a href="../resources.html">Resources</a>
-<a href="../news.html">News</a>
-<a href="../openings.html">Join Us</a>
-<a href="../contact.html">Contact</a>
+      <a href="../research.html" aria-current="page">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../news.html">News</a>
+      <a href="../openings.html">Join Us</a>
+      <a href="../contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="main-content">
 
-<section class="page-hero"><div class="container narrow"><p class="eyebrow">Research area</p><h1>Materials design</h1><p class="lead">Programming responsive molecular materials</p></div></section>
-<section class="section"><div class="container split-layout"><div><h2>Overview</h2></div><div><p class="lead">We investigate how protonation, electrostatics, solvation, and assembly govern the properties of soft and bio-inspired materials.</p><ul class="feature-list"><li>Chitin and polysaccharide assembly</li><li>pH-responsive materials</li><li>Reconfigurable hydrogels</li><li>Structure-property relationships</li></ul></div></div></section>
-<section class="section section-tint"><div class="container"><div class="section-heading"><div><p class="eyebrow">Explore further</p><h2>Related lab content</h2></div></div><div class="three-column"><a class="link-panel" href="../publications.html"><strong>Publications</strong><span>See papers related to this area →</span></a><a class="link-panel" href="../resources.html"><strong>Resources</strong><span>Explore software, databases, and servers →</span></a><a class="link-panel" href="../contact.html"><strong>Collaborate</strong><span>Contact the lab about this work →</span></a></div></div></section>
+<section class="research-detail-hero detail-materials">
+  <div class="container research-detail-grid">
+    <div>
+      <a class="back-link" href="../research.html">← All research areas</a>
+      <p class="eyebrow eyebrow-light">Responsive soft matter</p>
+      <h1>Materials design</h1>
+      <p class="research-statement">Molecular-scale charge regulation can program material-scale structure and function.</p>
+    </div>
+    <div class="research-hero-visual"><svg viewBox="0 0 520 420" role="img" aria-label="Polymer assembly concept"><g class="rv-polymer"><path d="M43 116c55-62 97 61 153 0s98 61 154 0 96 61 132 15M43 205c55-62 97 61 153 0s98 61 154 0 96 61 132 15M43 294c55-62 97 61 153 0s98 61 154 0 96 61 132 15"/></g><g class="rv-crosslinks"><path d="M108 150v42M202 139v56M299 148v45M399 145v58M151 238v43M250 235v56M351 238v47"/></g></svg></div>
+  </div>
+</section>
+<section class="section research-overview">
+  <div class="container editorial-intro">
+    <div class="section-kicker"><span>Overview</span></div>
+    <div>
+      <p class="lead">Our materials projects connect pH-dependent molecular interactions to self-assembly, mechanics, and responsiveness. Work on surfactants, chitin, chitosan, and hydrogels is motivated by questions from engineering and industry partners.</p>
+      <blockquote>How do pH, salt, hydration, acetylation, temperature, and electric fields control assembly and reconfiguration?</blockquote>
+      <div class="system-tags"><span>Chitin</span><span>Chitosan</span><span>Polysaccharide hydrogels</span><span>Surfactant micelles</span></div>
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">Research program</p><h2>What we investigate</h2></div></div>
+    <div class="research-pillars"><article><span>01</span><h3>Polysaccharide self-assembly</h3><p>Simulate how chitin and chitosan chains form nanofibrils and polymorphic structures.</p></article><article><span>02</span><h3>Responsive hydrogels</h3><p>Link pH-sensitive crosslinking and chain conformations to reconfigurable material behavior.</p></article><article><span>03</span><h3>Electrical programming</h3><p>Understand how electric fields and electrochemical gradients guide assembly and mesoscale organization.</p></article><article><span>04</span><h3>Environmental control</h3><p>Resolve how salt, temperature, and chemical modification alter flexibility, hydration, and phase behavior.</p></article></div>
+  </div>
+</section>
+<section class="section selected-papers-section">
+  <div class="container">
+    <div class="section-heading section-heading-wide"><div><p class="eyebrow">Selected publications</p><h2>Key work in this area.</h2></div><a class="arrow-link" href="../publications.html">Complete publication library <span>↗</span></a></div>
+    <div class="selected-paper-list"><a href="https://doi.org/10.1021/acsanm.5c02691"><span>2025</span><strong>How Electric Field Remodels the Nanofibril Structure of Chitosan Hydrogels</strong><i>↗</i></a><a href="https://doi.org/10.1021/acs.chemmater.3c01313"><span>2023</span><strong>Mechanism of the Temperature-Dependent Self-Assembly and Polymorphism of Chitin</strong><i>↗</i></a><a href="https://doi.org/10.1021/acs.chemmater.8b03753"><span>2018</span><strong>Exploring pH-responsive, switchable crosslinking mechanisms for programming reconfigurable hydrogels</strong><i>↗</i></a></div>
+  </div>
+</section>
+<section class="section next-research">
+  <div class="container next-research-inner"><div><p class="eyebrow eyebrow-light">Collaborate</p><h2>Working on a related molecular problem?</h2></div><a class="button button-gold" href="../contact.html">Contact the lab</a></div>
+</section>
 
 </main>
 
@@ -45,15 +86,32 @@
   <div class="container footer-grid">
     <div>
       <a class="site-logo footer-logo" href="../index.html">
-        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+        </span>
         <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
       </a>
       <p>Computational chemistry, molecular simulation, and data science for biomedical discovery and materials innovation.</p>
     </div>
-    <div><h2>Explore</h2><a href="../research.html">Research</a><a href="../people.html">People</a><a href="../publications.html">Publications</a><a href="../resources.html">Resources</a></div>
-    <div><h2>Connect</h2><a href="../news.html">News</a><a href="../openings.html">Open positions</a><a href="../contact.html">Contact the lab</a><a href="https://www.umaryland.edu/">University of Maryland</a></div>
+    <div>
+      <h2>Explore</h2>
+      <a href="../research.html">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../resources.html">Resources</a>
+    </div>
+    <div>
+      <h2>Connect</h2>
+      <a href="../news.html">News</a>
+      <a href="../openings.html">Open positions</a>
+      <a href="../contact.html">Contact the lab</a>
+      <a href="https://www.pharmacy.umaryland.edu/">School of Pharmacy</a>
+    </div>
   </div>
-  <div class="container footer-bottom"><span>© <span data-current-year></span> Shen Laboratory.</span><span>Built for clarity, accessibility, and scientific communication.</span></div>
+  <div class="container footer-bottom">
+    <span>© <span data-current-year></span> Shen Laboratory.</span>
+    <span>University of Maryland School of Pharmacy</span>
+  </div>
 </footer>
 
 </body>

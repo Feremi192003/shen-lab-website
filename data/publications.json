@@ -1,56 +1,330 @@
-[
-  {
-    "year": 2024,
-    "type": "Drug design",
-    "title": "Aiding the design of next-generation RAF inhibitors",
-    "authors": "Clayton et al.",
-    "journal": "eLife",
-    "url": "https://www.computchem.org/publications",
-    "featured": true
+{
+  "meta": {
+    "source": "Curated launch snapshot; the included GitHub Action replaces this with the complete public Zotero library after deployment.",
+    "updated": "2026-07-13",
+    "count": 20
   },
-  {
-    "year": 2024,
-    "type": "Machine learning",
-    "title": "Machine-learning models for proteome-wide covalent ligandability",
-    "authors": "Liu et al.",
-    "journal": "JACS Au",
-    "url": "https://www.computchem.org/publications",
-    "featured": true
-  },
-  {
-    "year": 2023,
-    "type": "Materials",
-    "title": "Direct observation of chitin self-assembly in silico",
-    "authors": "Romany et al.",
-    "journal": "Chemistry of Materials",
-    "url": "https://www.computchem.org/publications",
-    "featured": true
-  },
-  {
-    "year": 2023,
-    "type": "Drug design",
-    "title": "Effective quantum descriptors for Michael acceptors",
-    "authors": "Liu et al.",
-    "journal": "Journal of Chemical Information and Modeling",
-    "url": "https://www.computchem.org/publications",
-    "featured": false
-  },
-  {
-    "year": 2023,
-    "type": "Drug design",
-    "title": "Toward covalently drugging ERK pathway kinases",
-    "authors": "Romany et al.",
-    "journal": "Journal of Chemical Information and Modeling",
-    "url": "https://www.computchem.org/publications",
-    "featured": false
-  },
-  {
-    "year": 2022,
-    "type": "Methods",
-    "title": "GPU all-atom constant-pH molecular dynamics in Amber",
-    "authors": "Harris and Liu et al.",
-    "journal": "Journal of Chemical Theory and Computation",
-    "url": "https://www.computchem.org/publications",
-    "featured": false
-  }
-]
+  "publications": [
+    {
+      "year": 2026,
+      "type": "Journal article",
+      "title": "Membrane Permeability Drives the Extreme Potency of Fentanyl",
+      "authors": "Clayton J, Farmer G, Glenn J, Mistry SN, Lane JR, Shi L, Stavitskaya L, Canals M, Shen J",
+      "journal": "JACS Au",
+      "volume": "",
+      "pages": "",
+      "doi": "10.1021/jacsau.5c01666",
+      "url": "https://pubs.acs.org/doi/10.1021/jacsau.5c01666",
+      "topics": [
+        "Kinetics",
+        "Opioid",
+        "pH dependence",
+        "Enhanced sampling"
+      ]
+    },
+    {
+      "year": 2026,
+      "type": "Preprint",
+      "title": "Illuminating the Druggable Proteome with an AI Protein Profiling Platform",
+      "authors": "Dayhoff II GW, Kortzak D, Liu R, Shen M, Shen J",
+      "journal": "bioRxiv",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.09.07.670677v1",
+      "topics": [
+        "Drug design",
+        "Machine learning",
+        "Proteome"
+      ]
+    },
+    {
+      "year": 2026,
+      "type": "Submitted",
+      "title": "Protein Electrostatic Properties are Fine-Tuned Through Evolution",
+      "authors": "Shen M, Dayhoff II GW, Shen J",
+      "journal": "In revision",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "",
+      "topics": [
+        "pKa calculation",
+        "Machine learning",
+        "Evolution"
+      ]
+    },
+    {
+      "year": 2026,
+      "type": "Submitted",
+      "title": "Slow Dissociation of Nitazenes from the μ-Opioid Receptor Underlies the Challenge of Overdose Reversal",
+      "authors": "Clayton J, Kozell LB, Eshleman AJ, Bloom SH, Schutzer WE, Abbas AI, Stavitskaya L, Shen J",
+      "journal": "Submitted",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "url": "",
+      "topics": [
+        "Kinetics",
+        "Opioid",
+        "Structure–activity relationships"
+      ]
+    },
+    {
+      "year": 2025,
+      "type": "Journal article",
+      "title": "Recent Developments in Amber Biomolecular Simulations",
+      "authors": "Case DA, Cerutti DS, et al., including Shen J",
+      "journal": "Journal of Chemical Information and Modeling",
+      "volume": "65",
+      "pages": "7835–7843",
+      "doi": "10.1021/acs.jcim.5c01063",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c01063",
+      "topics": [
+        "CpHMD development",
+        "Review"
+      ]
+    },
+    {
+      "year": 2025,
+      "type": "Journal article",
+      "title": "How Electric Field Remodels the Nanofibril Structure of Chitosan Hydrogels: The Role of Dewetting during Electro-Assembly",
+      "authors": "Romany A, Payne GF, Shen J",
+      "journal": "ACS Applied Nano Materials",
+      "volume": "8",
+      "pages": "15299–15308",
+      "doi": "10.1021/acsanm.5c02691",
+      "url": "https://pubs.acs.org/doi/10.1021/acsanm.5c02691",
+      "topics": [
+        "Hydrogel",
+        "Chitosan",
+        "Materials"
+      ]
+    },
+    {
+      "year": 2025,
+      "type": "Journal article",
+      "title": "Drug Resistance Predictions Based on a Directed Flag Transformer",
+      "authors": "Chen D, Liu G, Du H, Wee J, Wang R, Chen J, Shen J, Wei G-W",
+      "journal": "Advanced Science",
+      "volume": "",
+      "pages": "e02756",
+      "doi": "10.1002/advs.202502756",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/advs.202502756",
+      "topics": [
+        "Binding free energy",
+        "Machine learning",
+        "Drug resistance"
+      ]
+    },
+    {
+      "year": 2025,
+      "type": "Journal article",
+      "title": "KaMLs for Predicting Protein pKa Values and Ionization States: Are Trees All You Need?",
+      "authors": "Shen M, Kortzak D, Ambrozak S, Bhatnagar S, Buchanan I, Liu R, Shen J",
+      "journal": "Journal of Chemical Theory and Computation",
+      "volume": "21",
+      "pages": "1446–1458",
+      "doi": "10.1021/acs.jctc.4c01602",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jctc.4c01602",
+      "topics": [
+        "pKa calculation",
+        "Machine learning",
+        "Database"
+      ]
+    },
+    {
+      "year": 2025,
+      "type": "Journal article",
+      "title": "A Putative Binding Model of Nitazene Derivatives at the μ-Opioid Receptor",
+      "authors": "Clayton J, Shi L, Robertson MJ, Skiniotis G, Michaelides M, Stavitskaya L, Shen J",
+      "journal": "Neuropharmacology",
+      "volume": "273",
+      "pages": "110437",
+      "doi": "",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0028390825001431",
+      "topics": [
+        "Opioid",
+        "GPCR",
+        "Binding free energy"
+      ]
+    },
+    {
+      "year": 2024,
+      "type": "Journal article",
+      "title": "Force Field Limitations of All-Atom Continuous Constant pH Molecular Dynamics",
+      "authors": "Peeples CA, Liu R, Shen J",
+      "journal": "Journal of Physical Chemistry B",
+      "volume": "128",
+      "pages": "11616–11624",
+      "doi": "10.1021/acs.jpcb.4c05971",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jpcb.4c05971",
+      "topics": [
+        "pKa calculation",
+        "CpHMD development",
+        "Force field"
+      ]
+    },
+    {
+      "year": 2024,
+      "type": "Journal article",
+      "title": "Interior pH Sensing Residue of Human Voltage-Gated Proton Channel Hv1 is Histidine 168",
+      "authors": "Shen M, Huang Y, Cai Z, Cherny VV, DeCoursey TE, Shen J",
+      "journal": "Biophysical Journal",
+      "volume": "123",
+      "pages": "4211–4220",
+      "doi": "10.1016/j.bpj.2024.07.027",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0006349524005599",
+      "topics": [
+        "pKa calculation",
+        "Proton channel",
+        "Structure–function"
+      ]
+    },
+    {
+      "year": 2024,
+      "type": "Journal article",
+      "title": "Machine Learned Classification of Ligand Intrinsic Activity at Human μ-Opioid Receptor",
+      "authors": "Oh M, Shen M, Liu R, Stavitskaya L, Shen J",
+      "journal": "ACS Chemical Neuroscience",
+      "volume": "15",
+      "pages": "2842–2852",
+      "doi": "10.1021/acschemneuro.4c00212",
+      "url": "https://pubs.acs.org/doi/10.1021/acschemneuro.4c00212",
+      "topics": [
+        "Opioid",
+        "GPCR",
+        "Machine learning"
+      ]
+    },
+    {
+      "year": 2024,
+      "type": "Journal article",
+      "title": "QM/MM Simulations of Afatinib-EGFR Addition: the Role of β-Dimethylaminomethyl Substitution",
+      "authors": "Ma S, Patel H, Peeples CA, Shen J",
+      "journal": "Journal of Chemical Theory and Computation",
+      "volume": "20",
+      "pages": "5528–5538",
+      "doi": "10.1021/acs.jctc.4c00290",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jctc.4c00290",
+      "topics": [
+        "Covalent inhibitor",
+        "Kinase",
+        "QM/MM"
+      ]
+    },
+    {
+      "year": 2024,
+      "type": "Journal article",
+      "title": "Mechanism of Dimer Selectivity and Binding Cooperativity of BRAF inhibitors",
+      "authors": "Clayton J, Romany A, Matenoglou E, Gathiotis E, Poulikakos PI, Shen J",
+      "journal": "eLife",
+      "volume": "",
+      "pages": "",
+      "doi": "10.7554/eLife.95334.2",
+      "url": "https://elifesciences.org/articles/95334",
+      "topics": [
+        "Kinase",
+        "Allostery",
+        "Drug design"
+      ]
+    },
+    {
+      "year": 2024,
+      "type": "Journal article",
+      "title": "Constant-pH Simulations with the Polarizable Atomic Multipole AMOEBA Force Field",
+      "authors": "Thiel A, Speranza MJ, Jadhav S, Stevens LL, Unruh DK, Ren P, Ponder JW, Shen J, Schnieders M",
+      "journal": "Journal of Chemical Theory and Computation",
+      "volume": "20",
+      "pages": "2921–2933",
+      "doi": "10.1021/acs.jctc.3c01180",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jctc.3c01180",
+      "topics": [
+        "pKa calculation",
+        "CpHMD development",
+        "Force field"
+      ]
+    },
+    {
+      "year": 2024,
+      "type": "Journal article",
+      "title": "Machine Learning Models to Interrogate Proteome-wide Covalent Ligandabilities Directed at Cysteines",
+      "authors": "Liu R, Clayton J, Shen M, Bhatnagar S, Shen J",
+      "journal": "JACS Au",
+      "volume": "4",
+      "pages": "1374–1384",
+      "doi": "10.1021/jacsau.3c00749",
+      "url": "https://pubs.acs.org/doi/10.1021/jacsau.3c00749",
+      "topics": [
+        "Cysteine ligandability",
+        "Drug design",
+        "Machine learning",
+        "Database"
+      ]
+    },
+    {
+      "year": 2024,
+      "type": "Journal article",
+      "title": "Effect of Acetylation on the Nanofibril Formation of Chitosan From All-Atom de novo Self-Assembly Simulations",
+      "authors": "Romany A, Payne GF, Shen J",
+      "journal": "Molecules",
+      "volume": "29",
+      "pages": "561",
+      "doi": "10.3390/molecules29030561",
+      "url": "https://doi.org/10.3390/molecules29030561",
+      "topics": [
+        "Chitosan",
+        "Self-assembly",
+        "Materials"
+      ]
+    },
+    {
+      "year": 2023,
+      "type": "Journal article",
+      "title": "Mechanism of the Temperature-Dependent Self-Assembly and Polymorphism of Chitin",
+      "authors": "Romany A, Payne GF, Shen J",
+      "journal": "Chemistry of Materials",
+      "volume": "35",
+      "pages": "6472–6481",
+      "doi": "10.1021/acs.chemmater.3c01313",
+      "url": "https://doi.org/10.1021/acs.chemmater.3c01313",
+      "topics": [
+        "Chitin",
+        "Self-assembly",
+        "Hydrogel"
+      ]
+    },
+    {
+      "year": 2023,
+      "type": "Journal article",
+      "title": "Quantum Descriptors for Predicting and Understanding the Structure-Activity Relationships of Covalent Warheads",
+      "authors": "Liu R, Vazquez-Montelongo EA, Ma S, Shen J",
+      "journal": "Journal of Chemical Information and Modeling",
+      "volume": "63",
+      "pages": "4912–4923",
+      "doi": "10.1021/acs.jcim.3c00720",
+      "url": "https://doi.org/10.1021/acs.jcim.3c00720",
+      "topics": [
+        "Covalent inhibitor",
+        "Quantum descriptors",
+        "Kinetics"
+      ]
+    },
+    {
+      "year": 2023,
+      "type": "Journal article",
+      "title": "Analysis of the ERK Pathway Cysteinome for Targeted Covalent Inhibition of RAF and MEK Kinases",
+      "authors": "Romany E, Liu R, Zhan S, Clayton J, Shen J",
+      "journal": "Journal of Chemical Information and Modeling",
+      "volume": "63",
+      "pages": "2483–2494",
+      "doi": "10.1021/acs.jcim.3c00014",
+      "url": "https://doi.org/10.1021/acs.jcim.3c00014",
+      "topics": [
+        "Covalent inhibitor",
+        "Kinase",
+        "pKa calculation"
+      ]
+    }
+  ]
+}

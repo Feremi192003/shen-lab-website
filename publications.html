@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Publications from the Shen Laboratory.">
+  <meta name="description" content="Search the complete Shen Laboratory publication library, synchronized from Zotero.">
+  <meta name="theme-color" content="#071d36">
+  <meta property="og:title" content="Publications | Shen Laboratory">
+  <meta property="og:description" content="Search the complete Shen Laboratory publication library, synchronized from Zotero.">
+  <meta property="og:type" content="website">
   <title>Publications | Shen Laboratory</title>
-  <link rel="stylesheet" href="css/styles.css?v=2">
-  <script src="js/script.js?v=2" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=4">
+  
+  <script src="js/script.js?v=4" defer></script>
+  <script src="js/publications.js?v=4" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -14,7 +20,9 @@
 <header class="site-header">
   <div class="container nav-container">
     <a class="site-logo" href="index.html" aria-label="Shen Laboratory home">
-      <span class="logo-mark" aria-hidden="true">S</span>
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+      </span>
       <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
@@ -22,27 +30,46 @@
     </button>
     <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
       <a href="index.html">Home</a>
-<a href="research.html">Research</a>
-<a href="people.html">People</a>
-<a href="publications.html" aria-current="page">Publications</a>
-<a href="resources.html">Resources</a>
-<a href="news.html">News</a>
-<a href="openings.html">Join Us</a>
-<a href="contact.html">Contact</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html" aria-current="page">Publications</a>
+      <a href="resources.html">Resources</a>
+      <a href="news.html">News</a>
+      <a href="openings.html">Join Us</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="main-content">
 
-<section class="page-hero"><div class="container narrow"><p class="eyebrow">Publications</p><h1>Research from the Shen Laboratory</h1><p class="lead">Browse selected publications by year, topic, author, or journal.</p></div></section>
-<section class="section"><div class="container">
-<div class="publication-controls"><label><span>Search publications</span><input id="publication-search" type="search" placeholder="Title, author, journal, or topic"></label><label><span>Year</span><select id="publication-year"><option value="">All years</option></select></label></div>
-<p id="publication-count" class="result-count" aria-live="polite"></p>
-<div id="publication-list" class="publication-list"><p>Loading publications…</p></div>
-<noscript><p>JavaScript is required for publication filtering. Visit the <a href="https://www.computchem.org/publications">current publication archive</a>.</p></noscript>
-</div></section>
-<script src="js/publications.js?v=2" defer></script>
+<section class="publications-hero">
+  <div class="container publications-hero-grid">
+    <div><p class="eyebrow eyebrow-light">Publications</p><h1>A record of methods, mechanisms, and molecular discovery.</h1></div>
+    <div><p class="lead">Search the Shen Lab publication library by title, author, journal, year, or research topic. The library is synchronized from the lab’s public Zotero group.</p><a class="button button-ghost" href="https://www.zotero.org/groups/2660547/janashenlabpubs/library">Open Zotero library ↗</a></div>
+  </div>
+</section>
+<section class="section publication-browser-section">
+  <div class="container">
+    <div class="publication-toolbar">
+      <label class="search-control">
+        <span>Search</span>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg><input id="publication-search" type="search" placeholder="Title, author, journal, DOI, or topic" autocomplete="off"></div>
+      </label>
+      <label><span>Year</span><select id="publication-year"><option value="">All years</option></select></label>
+      <label><span>Topic</span><select id="publication-topic"><option value="">All topics</option></select></label>
+      <label><span>Sort</span><select id="publication-sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label>
+    </div>
+    <div class="publication-status-row">
+      <p id="publication-count" class="result-count" aria-live="polite">Loading publication library…</p>
+      <p id="publication-source" class="data-source"></p>
+    </div>
+    <div id="publication-list" class="publication-library" aria-live="polite">
+      <div class="publication-skeleton"></div><div class="publication-skeleton"></div><div class="publication-skeleton"></div>
+    </div>
+    <noscript><p>JavaScript is required for publication filtering. The complete library is also available in <a href="https://www.zotero.org/groups/2660547/janashenlabpubs/library">Zotero</a>.</p></noscript>
+  </div>
+</section>
 
 </main>
 
@@ -50,15 +77,32 @@
   <div class="container footer-grid">
     <div>
       <a class="site-logo footer-logo" href="index.html">
-        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+        </span>
         <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
       </a>
       <p>Computational chemistry, molecular simulation, and data science for biomedical discovery and materials innovation.</p>
     </div>
-    <div><h2>Explore</h2><a href="research.html">Research</a><a href="people.html">People</a><a href="publications.html">Publications</a><a href="resources.html">Resources</a></div>
-    <div><h2>Connect</h2><a href="news.html">News</a><a href="openings.html">Open positions</a><a href="contact.html">Contact the lab</a><a href="https://www.umaryland.edu/">University of Maryland</a></div>
+    <div>
+      <h2>Explore</h2>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <div>
+      <h2>Connect</h2>
+      <a href="news.html">News</a>
+      <a href="openings.html">Open positions</a>
+      <a href="contact.html">Contact the lab</a>
+      <a href="https://www.pharmacy.umaryland.edu/">School of Pharmacy</a>
+    </div>
   </div>
-  <div class="container footer-bottom"><span>© <span data-current-year></span> Shen Laboratory.</span><span>Built for clarity, accessibility, and scientific communication.</span></div>
+  <div class="container footer-bottom">
+    <span>© <span data-current-year></span> Shen Laboratory.</span>
+    <span>University of Maryland School of Pharmacy</span>
+  </div>
 </footer>
 
 </body>

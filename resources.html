@@ -4,9 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Software, databases, and web servers from the Shen Laboratory.">
+  <meta name="theme-color" content="#071d36">
+  <meta property="og:title" content="Resources | Shen Laboratory">
+  <meta property="og:description" content="Software, databases, and web servers from the Shen Laboratory.">
+  <meta property="og:type" content="website">
   <title>Resources | Shen Laboratory</title>
-  <link rel="stylesheet" href="css/styles.css?v=2">
-  <script src="js/script.js?v=2" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=4">
+  
+  <script src="js/script.js?v=4" defer></script>
+  
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -14,7 +20,9 @@
 <header class="site-header">
   <div class="container nav-container">
     <a class="site-logo" href="index.html" aria-label="Shen Laboratory home">
-      <span class="logo-mark" aria-hidden="true">S</span>
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+      </span>
       <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
@@ -22,19 +30,18 @@
     </button>
     <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
       <a href="index.html">Home</a>
-<a href="research.html">Research</a>
-<a href="people.html">People</a>
-<a href="publications.html">Publications</a>
-<a href="resources.html" aria-current="page">Resources</a>
-<a href="news.html">News</a>
-<a href="openings.html">Join Us</a>
-<a href="contact.html">Contact</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="resources.html" aria-current="page">Resources</a>
+      <a href="news.html">News</a>
+      <a href="openings.html">Join Us</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="main-content">
-
 <section class="page-hero"><div class="container narrow"><p class="eyebrow">Resources</p><h1>Software, databases, and web servers</h1><p class="lead">Tools and datasets developed by the group for molecular simulation, pKa prediction, and computational drug discovery.</p></div></section>
 <section class="section"><div class="container">
 <div class="resource-group"><div><p class="eyebrow">Software</p><h2>Simulation methods</h2></div><div class="resource-list">
@@ -50,22 +57,38 @@
 <a class="resource-card" href="https://deepcys.computchem.org/"><span class="tag">Web server</span><h3>DeepCys</h3><p>Data-driven prediction of cysteine reactivity and ligandability.</p><span class="text-link">Launch server →</span></a>
 </div></div>
 </div></section>
-
 </main>
 
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
       <a class="site-logo footer-logo" href="index.html">
-        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+        </span>
         <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
       </a>
       <p>Computational chemistry, molecular simulation, and data science for biomedical discovery and materials innovation.</p>
     </div>
-    <div><h2>Explore</h2><a href="research.html">Research</a><a href="people.html">People</a><a href="publications.html">Publications</a><a href="resources.html">Resources</a></div>
-    <div><h2>Connect</h2><a href="news.html">News</a><a href="openings.html">Open positions</a><a href="contact.html">Contact the lab</a><a href="https://www.umaryland.edu/">University of Maryland</a></div>
+    <div>
+      <h2>Explore</h2>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <div>
+      <h2>Connect</h2>
+      <a href="news.html">News</a>
+      <a href="openings.html">Open positions</a>
+      <a href="contact.html">Contact the lab</a>
+      <a href="https://www.pharmacy.umaryland.edu/">School of Pharmacy</a>
+    </div>
   </div>
-  <div class="container footer-bottom"><span>© <span data-current-year></span> Shen Laboratory.</span><span>Built for clarity, accessibility, and scientific communication.</span></div>
+  <div class="container footer-bottom">
+    <span>© <span data-current-year></span> Shen Laboratory.</span>
+    <span>University of Maryland School of Pharmacy</span>
+  </div>
 </footer>
 
 </body>

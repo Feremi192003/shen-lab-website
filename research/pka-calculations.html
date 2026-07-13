@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="pKa calculations research in the Shen Laboratory.">
-  <title>pKa calculations | Shen Laboratory</title>
-  <link rel="stylesheet" href="../css/styles.css?v=2">
-  <script src="../js/script.js?v=2" defer></script>
+  <meta name="description" content="pKₐ calculations research in the Shen Laboratory at the University of Maryland.">
+  <meta name="theme-color" content="#071d36">
+  <meta property="og:title" content="pKₐ calculations | Shen Laboratory">
+  <meta property="og:description" content="pKₐ calculations research in the Shen Laboratory at the University of Maryland.">
+  <meta property="og:type" content="website">
+  <title>pKₐ calculations | Shen Laboratory</title>
+  <link rel="stylesheet" href="../css/styles.css?v=4">
+  
+  <script src="../js/script.js?v=4" defer></script>
+  
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -14,7 +20,9 @@
 <header class="site-header">
   <div class="container nav-container">
     <a class="site-logo" href="../index.html" aria-label="Shen Laboratory home">
-      <span class="logo-mark" aria-hidden="true">S</span>
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+      </span>
       <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
@@ -22,22 +30,55 @@
     </button>
     <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
       <a href="../index.html">Home</a>
-<a href="../research.html" aria-current="page">Research</a>
-<a href="../people.html">People</a>
-<a href="../publications.html">Publications</a>
-<a href="../resources.html">Resources</a>
-<a href="../news.html">News</a>
-<a href="../openings.html">Join Us</a>
-<a href="../contact.html">Contact</a>
+      <a href="../research.html" aria-current="page">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../news.html">News</a>
+      <a href="../openings.html">Join Us</a>
+      <a href="../contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="main-content">
 
-<section class="page-hero"><div class="container narrow"><p class="eyebrow">Research area</p><h1>pKa calculations</h1><p class="lead">Predicting ionization in complex environments</p></div></section>
-<section class="section"><div class="container split-layout"><div><h2>Overview</h2></div><div><p class="lead">Accurate pKa values are central to understanding binding, catalysis, reactivity, permeability, and conformational stability. We build and benchmark practical prediction workflows for biomolecules and drug-like compounds.</p><ul class="feature-list"><li>Protein residue pKa prediction</li><li>Ligand microstate analysis</li><li>Electrostatic coupling</li><li>Benchmark datasets and validation</li></ul></div></div></section>
-<section class="section section-tint"><div class="container"><div class="section-heading"><div><p class="eyebrow">Explore further</p><h2>Related lab content</h2></div></div><div class="three-column"><a class="link-panel" href="../publications.html"><strong>Publications</strong><span>See papers related to this area →</span></a><a class="link-panel" href="../resources.html"><strong>Resources</strong><span>Explore software, databases, and servers →</span></a><a class="link-panel" href="../contact.html"><strong>Collaborate</strong><span>Contact the lab about this work →</span></a></div></div></section>
+<section class="research-detail-hero detail-pka">
+  <div class="container research-detail-grid">
+    <div>
+      <a class="back-link" href="../research.html">← All research areas</a>
+      <p class="eyebrow eyebrow-light">Ionization and electrostatics</p>
+      <h1>pKₐ calculations</h1>
+      <p class="research-statement">Protonation states are molecular variables—not preprocessing choices.</p>
+    </div>
+    <div class="research-hero-visual"><svg viewBox="0 0 520 420" role="img" aria-label="pKa titration concept"><path class="rv-curve" d="M58 333c90 0 115-8 143-38 35-38 24-122 65-170 35-41 90-44 194-44"/><path class="rv-axis" d="M58 55v278h410"/><g class="rv-ticks"><path d="M130 327v12M224 327v12M318 327v12M412 327v12"/></g><circle class="rv-focus" cx="266" cy="207" r="20"/><text x="286" y="196">pKₐ</text><text x="118" y="370">acidic</text><text x="390" y="370">basic</text></svg></div>
+  </div>
+</section>
+<section class="section research-overview">
+  <div class="container editorial-intro">
+    <div class="section-kicker"><span>Overview</span></div>
+    <div>
+      <p class="lead">pKₐ values determine which protonation states are populated at a given pH. In proteins and ligands, those values are shifted by solvation, electrostatic interactions, hydrogen bonding, conformational change, and binding. We develop dynamic prediction approaches that account for those couplings.</p>
+      <blockquote>Which residues and ligands gain or lose protons, when do they do it, and how does that change molecular function?</blockquote>
+      <div class="system-tags"><span>Aspartyl proteases</span><span>Cysteine proteases</span><span>Kinases</span><span>Protein–ligand complexes</span></div>
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">Research program</p><h2>What we investigate</h2></div></div>
+    <div class="research-pillars"><article><span>01</span><h3>Protein pKₐ prediction</h3><p>Calculate residue-specific ionization equilibria while allowing the surrounding protein structure to relax.</p></article><article><span>02</span><h3>Ligand microstates</h3><p>Model binding-induced protonation changes and their effects on water, pose, affinity, and selectivity.</p></article><article><span>03</span><h3>Catalytic chemistry</h3><p>Identify proton donors, nucleophiles, and reactive cysteines in enzyme active sites.</p></article><article><span>04</span><h3>Proteome-scale models</h3><p>Combine curated experimental data with machine learning to accelerate pKₐ and ionization-state prediction.</p></article></div>
+  </div>
+</section>
+<section class="section selected-papers-section">
+  <div class="container">
+    <div class="section-heading section-heading-wide"><div><p class="eyebrow">Selected publications</p><h2>Key work in this area.</h2></div><a class="arrow-link" href="../publications.html">Complete publication library <span>↗</span></a></div>
+    <div class="selected-paper-list"><a href="https://doi.org/10.1021/acs.jctc.4c01602"><span>2025</span><strong>KaMLs for Predicting Protein pKa Values and Ionization States: Are Trees All You Need?</strong><i>↗</i></a><a href="https://doi.org/10.1021/acs.jctc.0c00258"><span>2020</span><strong>Predicting reactive cysteines with implicit-solvent based continuous constant pH molecular dynamics</strong><i>↗</i></a><a href="https://doi.org/10.1021/acs.jpclett.8b00238"><span>2018</span><strong>Predicting catalytic proton donors and nucleophiles in enzymes</strong><i>↗</i></a></div>
+  </div>
+</section>
+<section class="section next-research">
+  <div class="container next-research-inner"><div><p class="eyebrow eyebrow-light">Collaborate</p><h2>Working on a related molecular problem?</h2></div><a class="button button-gold" href="../contact.html">Contact the lab</a></div>
+</section>
 
 </main>
 
@@ -45,15 +86,32 @@
   <div class="container footer-grid">
     <div>
       <a class="site-logo footer-logo" href="../index.html">
-        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+        </span>
         <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
       </a>
       <p>Computational chemistry, molecular simulation, and data science for biomedical discovery and materials innovation.</p>
     </div>
-    <div><h2>Explore</h2><a href="../research.html">Research</a><a href="../people.html">People</a><a href="../publications.html">Publications</a><a href="../resources.html">Resources</a></div>
-    <div><h2>Connect</h2><a href="../news.html">News</a><a href="../openings.html">Open positions</a><a href="../contact.html">Contact the lab</a><a href="https://www.umaryland.edu/">University of Maryland</a></div>
+    <div>
+      <h2>Explore</h2>
+      <a href="../research.html">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../resources.html">Resources</a>
+    </div>
+    <div>
+      <h2>Connect</h2>
+      <a href="../news.html">News</a>
+      <a href="../openings.html">Open positions</a>
+      <a href="../contact.html">Contact the lab</a>
+      <a href="https://www.pharmacy.umaryland.edu/">School of Pharmacy</a>
+    </div>
   </div>
-  <div class="container footer-bottom"><span>© <span data-current-year></span> Shen Laboratory.</span><span>Built for clarity, accessibility, and scientific communication.</span></div>
+  <div class="container footer-bottom">
+    <span>© <span data-current-year></span> Shen Laboratory.</span>
+    <span>University of Maryland School of Pharmacy</span>
+  </div>
 </footer>
 
 </body>

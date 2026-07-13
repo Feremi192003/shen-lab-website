@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Drug design research in the Shen Laboratory.">
+  <meta name="description" content="Drug design research in the Shen Laboratory at the University of Maryland.">
+  <meta name="theme-color" content="#071d36">
+  <meta property="og:title" content="Drug design | Shen Laboratory">
+  <meta property="og:description" content="Drug design research in the Shen Laboratory at the University of Maryland.">
+  <meta property="og:type" content="website">
   <title>Drug design | Shen Laboratory</title>
-  <link rel="stylesheet" href="../css/styles.css?v=2">
-  <script src="../js/script.js?v=2" defer></script>
+  <link rel="stylesheet" href="../css/styles.css?v=4">
+  
+  <script src="../js/script.js?v=4" defer></script>
+  
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -14,7 +20,9 @@
 <header class="site-header">
   <div class="container nav-container">
     <a class="site-logo" href="../index.html" aria-label="Shen Laboratory home">
-      <span class="logo-mark" aria-hidden="true">S</span>
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+      </span>
       <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
@@ -22,22 +30,55 @@
     </button>
     <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
       <a href="../index.html">Home</a>
-<a href="../research.html" aria-current="page">Research</a>
-<a href="../people.html">People</a>
-<a href="../publications.html">Publications</a>
-<a href="../resources.html">Resources</a>
-<a href="../news.html">News</a>
-<a href="../openings.html">Join Us</a>
-<a href="../contact.html">Contact</a>
+      <a href="../research.html" aria-current="page">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../news.html">News</a>
+      <a href="../openings.html">Join Us</a>
+      <a href="../contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="main-content">
 
-<section class="page-hero"><div class="container narrow"><p class="eyebrow">Research area</p><h1>Drug design</h1><p class="lead">Molecular insight for inhibitor discovery</p></div></section>
-<section class="section"><div class="container split-layout"><div><h2>Overview</h2></div><div><p class="lead">Our drug-design research combines simulation, chemical descriptors, and data-driven models to identify actionable mechanisms and improve inhibitor strategies.</p><ul class="feature-list"><li>Covalent inhibitor design</li><li>Kinase conformational states</li><li>Ligandability prediction</li><li>Resistance mechanisms</li></ul></div></div></section>
-<section class="section section-tint"><div class="container"><div class="section-heading"><div><p class="eyebrow">Explore further</p><h2>Related lab content</h2></div></div><div class="three-column"><a class="link-panel" href="../publications.html"><strong>Publications</strong><span>See papers related to this area →</span></a><a class="link-panel" href="../resources.html"><strong>Resources</strong><span>Explore software, databases, and servers →</span></a><a class="link-panel" href="../contact.html"><strong>Collaborate</strong><span>Contact the lab about this work →</span></a></div></div></section>
+<section class="research-detail-hero detail-drug">
+  <div class="container research-detail-grid">
+    <div>
+      <a class="back-link" href="../research.html">← All research areas</a>
+      <p class="eyebrow eyebrow-light">Molecular discovery</p>
+      <h1>Drug design</h1>
+      <p class="research-statement">Design improves when reactivity, protonation, conformation, and kinetics are modeled together.</p>
+    </div>
+    <div class="research-hero-visual"><svg viewBox="0 0 520 420" role="img" aria-label="Ligand binding concept"><g class="rv-pocket"><path d="M67 170c45-97 164-122 257-63 43 27 62 73 123 87-10 105-79 165-184 158-88-6-173-72-196-182Z"/></g><g class="rv-ligand"><polygon points="221,176 268,149 315,176 315,229 268,256 221,229"/><circle cx="268" cy="202" r="17"/><path d="m315 176 48-24M221 229l-42 30"/></g><path class="rv-dash" d="M342 202h64"/></svg></div>
+  </div>
+</section>
+<section class="section research-overview">
+  <div class="container editorial-intro">
+    <div class="section-kicker"><span>Overview</span></div>
+    <div>
+      <p class="lead">The lab applies molecular simulation and data science to questions in inhibitor selectivity, covalent drug discovery, resistance, and receptor pharmacology. The aim is not simply to score compounds, but to reveal mechanisms that create actionable design rules.</p>
+      <blockquote>Which molecular features control selectivity, reactivity, resistance, and residence time—and how can those features guide new compounds?</blockquote>
+      <div class="system-tags"><span>RAF/MEK/ERK kinases</span><span>Coronavirus proteases</span><span>Aspartyl proteases</span><span>Covalent warheads</span></div>
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">Research program</p><h2>What we investigate</h2></div></div>
+    <div class="research-pillars"><article><span>01</span><h3>Targeted covalent inhibitors</h3><p>Predict reactive and ligandable cysteines and quantify the structure–activity relationships of covalent warheads.</p></article><article><span>02</span><h3>Kinase conformational landscapes</h3><p>Model protonation-coupled conformational plasticity and allostery relevant to selective inhibition.</p></article><article><span>03</span><h3>Viral proteases</h3><p>Study catalytic ionization, conformational dynamics, and mutation-driven resistance in coronavirus proteases.</p></article><article><span>04</span><h3>AI-enabled profiling</h3><p>Develop databases and machine-learning models for protein-site ligandability and molecular activity.</p></article></div>
+  </div>
+</section>
+<section class="section selected-papers-section">
+  <div class="container">
+    <div class="section-heading section-heading-wide"><div><p class="eyebrow">Selected publications</p><h2>Key work in this area.</h2></div><a class="arrow-link" href="../publications.html">Complete publication library <span>↗</span></a></div>
+    <div class="selected-paper-list"><a href="https://doi.org/10.1021/jacsau.3c00749"><span>2024</span><strong>Machine Learning Models to Interrogate Proteome-wide Covalent Ligandabilities Directed at Cysteines</strong><i>↗</i></a><a href="https://doi.org/10.7554/eLife.95334.2"><span>2024</span><strong>Mechanism of Dimer Selectivity and Binding Cooperativity of BRAF inhibitors</strong><i>↗</i></a><a href="https://doi.org/10.1021/acs.jcim.3c00720"><span>2023</span><strong>Quantum Descriptors for Predicting and Understanding the Structure-Activity Relationships of Covalent Warheads</strong><i>↗</i></a></div>
+  </div>
+</section>
+<section class="section next-research">
+  <div class="container next-research-inner"><div><p class="eyebrow eyebrow-light">Collaborate</p><h2>Working on a related molecular problem?</h2></div><a class="button button-gold" href="../contact.html">Contact the lab</a></div>
+</section>
 
 </main>
 
@@ -45,15 +86,32 @@
   <div class="container footer-grid">
     <div>
       <a class="site-logo footer-logo" href="../index.html">
-        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><circle cx="13" cy="23" r="4"/><circle cx="28" cy="12" r="5"/><circle cx="32" cy="31" r="6"/><path d="M16.5 20.5 24 15M17 25l9.5 4"/></svg>
+        </span>
         <span class="logo-text"><strong>Shen Laboratory</strong><small>University of Maryland</small></span>
       </a>
       <p>Computational chemistry, molecular simulation, and data science for biomedical discovery and materials innovation.</p>
     </div>
-    <div><h2>Explore</h2><a href="../research.html">Research</a><a href="../people.html">People</a><a href="../publications.html">Publications</a><a href="../resources.html">Resources</a></div>
-    <div><h2>Connect</h2><a href="../news.html">News</a><a href="../openings.html">Open positions</a><a href="../contact.html">Contact the lab</a><a href="https://www.umaryland.edu/">University of Maryland</a></div>
+    <div>
+      <h2>Explore</h2>
+      <a href="../research.html">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../resources.html">Resources</a>
+    </div>
+    <div>
+      <h2>Connect</h2>
+      <a href="../news.html">News</a>
+      <a href="../openings.html">Open positions</a>
+      <a href="../contact.html">Contact the lab</a>
+      <a href="https://www.pharmacy.umaryland.edu/">School of Pharmacy</a>
+    </div>
   </div>
-  <div class="container footer-bottom"><span>© <span data-current-year></span> Shen Laboratory.</span><span>Built for clarity, accessibility, and scientific communication.</span></div>
+  <div class="container footer-bottom">
+    <span>© <span data-current-year></span> Shen Laboratory.</span>
+    <span>University of Maryland School of Pharmacy</span>
+  </div>
 </footer>
 
 </body>

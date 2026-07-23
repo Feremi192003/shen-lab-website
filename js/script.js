@@ -31,3 +31,65 @@ if (menuButton && navigation) {
 document.querySelectorAll('[data-current-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+  const submitButton = document.getElementById("contact-submit");
+  const statusMessage = document.getElementById("contact-status");
+
+  const contactEndpoint =
+    "https://shenlab-contact.feremi192003.workers.dev";
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    statusMessage.textContent = "";
+    statusMessage.className = "contact-status";
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+
+    const formData = new FormData(contactForm);
+
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      topic: formData.get("topic"),
+      message: formData.get("message"),
+      website: formData.get("website"),
+    };
+
+    try {
+      const response = await fetch(contactEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Message could not be sent.");
+      }
+
+      contactForm.reset();
+
+      statusMessage.textContent = "Thank you! Your message has been sent.";
+      statusMessage.classList.add("is-success");
+    } catch (error) {
+      console.error(error);
+
+      statusMessage.textContent =
+        error.message ||
+        "Something went wrong. Please try again later.";
+
+      statusMessage.classList.add("is-error");
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Send message";
+    }
+  });
+}

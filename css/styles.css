@@ -622,3 +622,29 @@ h3{letter-spacing:-.018em}
     text-align: center;
   }
 }
+.form-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.contact-status {
+  min-height: 1.5em;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.contact-status.is-success {
+  color: #176b4d;
+}
+
+.contact-status.is-error {
+  color: #a32929;
+}

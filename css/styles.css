@@ -662,3 +662,427 @@ h3{letter-spacing:-.018em}
     gap: 40px;
   }
 }
+
+/* ==========================================================
+   HOMEPAGE RESEARCH HIGHLIGHTS
+   The cards intentionally use CSS scroll snapping rather than
+   a JavaScript carousel, making them easy to edit and maintain.
+   ========================================================== */
+
+.research-highlights {
+  padding: clamp(2.5rem, 5vw, 4.75rem) 0;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(7, 29, 54, 0.035), transparent 70%),
+    #fff;
+  border-bottom: 1px solid rgba(7, 29, 54, 0.1);
+}
+
+.research-highlights-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.7fr);
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.research-highlights-heading h2 {
+  max-width: 12ch;
+  margin: 0.25rem 0 0;
+  font-size: clamp(2rem, 4vw, 3.7rem);
+  line-height: 0.98;
+}
+
+.research-highlights-heading > p {
+  max-width: 34rem;
+  margin: 0;
+  color: #526173;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.research-highlights-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(18rem, 23rem);
+  gap: 1.25rem;
+  padding: 0.25rem max(1rem, calc((100vw - 1200px) / 2)) 1.25rem;
+  margin-inline: min(-1rem, calc((1200px - 100vw) / 2));
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(7, 29, 54, 0.35) transparent;
+}
+
+.research-highlights-track::-webkit-scrollbar {
+  height: 0.55rem;
+}
+
+.research-highlights-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.research-highlights-track::-webkit-scrollbar-thumb {
+  background: rgba(7, 29, 54, 0.28);
+  border-radius: 999px;
+}
+
+.research-highlight-card {
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  scroll-snap-align: start;
+  background: #fff;
+  border: 1px solid rgba(7, 29, 54, 0.15);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2.5rem rgba(7, 29, 54, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.research-highlight-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 1.3rem 3rem rgba(7, 29, 54, 0.13);
+}
+
+.research-highlight-card > a {
+  display: grid;
+  grid-template-rows: 43% 57%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.research-highlight-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #dfe7ef;
+  border-bottom: 1px solid rgba(7, 29, 54, 0.1);
+}
+
+.research-highlight-copy {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 1.15rem 1.25rem 1.3rem;
+}
+
+.research-highlight-meta {
+  margin: 0 0 0.55rem;
+  color: #168f91;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.research-highlight-copy h3 {
+  margin: 0;
+  color: #071d36;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.15;
+}
+
+.research-highlight-copy > p:not(.research-highlight-meta) {
+  display: -webkit-box;
+  margin: 0.75rem 0 0;
+  overflow: hidden;
+  color: #526173;
+  font-size: 0.9rem;
+  line-height: 1.48;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.research-highlight-copy span {
+  margin-top: auto;
+  padding-top: 0.8rem;
+  color: #071d36;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.research-highlight-card-placeholder {
+  background:
+    linear-gradient(145deg, rgba(34, 166, 161, 0.07), rgba(235, 166, 76, 0.1)),
+    #fff;
+}
+
+.research-highlights-hint {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin: 0.35rem 0 0;
+  color: #6b7888;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 760px) {
+  .research-highlights-heading {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .research-highlights-heading > p {
+    font-size: 0.95rem;
+  }
+
+  .research-highlights-track {
+    grid-auto-columns: min(82vw, 21rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-highlight-card {
+    transition: none;
+  }
+}
+
+/* === RESEARCH HIGHLIGHTS V2 START === */
+.research-highlights {
+  position: relative;
+  padding: clamp(4rem, 7vw, 7rem) 0;
+  overflow: hidden;
+  color: #f7fafc;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(34, 166, 161, 0.16), transparent 28rem),
+    linear-gradient(135deg, #071d36 0%, #0a3152 58%, #0d3a5d 100%);
+  border-top: 1px solid rgba(131, 229, 223, 0.12);
+}
+.research-highlights::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  opacity: 0.32;
+  background-image:
+    linear-gradient(rgba(119, 201, 239, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(119, 201, 239, 0.09) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: linear-gradient(to bottom, black, transparent 92%);
+}
+.research-highlights > .container { position: relative; z-index: 1; }
+.research-highlights-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.65fr);
+  align-items: end;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  margin-bottom: clamp(1.8rem, 4vw, 3rem);
+}
+.research-highlights-heading h2 {
+  max-width: 14ch;
+  margin: 0.35rem 0 0;
+  color: #fff;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(2.25rem, 4.5vw, 4.6rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+.research-highlights-heading > p {
+  max-width: 33rem;
+  margin: 0;
+  color: #c6d7e7;
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  line-height: 1.7;
+}
+.research-highlights-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(19rem, 23.5rem);
+  gap: 1.25rem;
+  padding: 0.35rem 0 1.4rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scrollbar-color: rgba(131, 229, 223, 0.45) rgba(255, 255, 255, 0.05);
+  scrollbar-width: thin;
+}
+.research-highlights-track::-webkit-scrollbar { height: 0.5rem; }
+.research-highlights-track::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.05);
+  border-radius: 999px;
+}
+.research-highlights-track::-webkit-scrollbar-thumb {
+  background: rgba(131,229,223,.42);
+  border-radius: 999px;
+}
+.research-highlight-card {
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  scroll-snap-align: start;
+  background: rgba(8, 37, 65, 0.82);
+  border: 1px solid rgba(131, 229, 223, 0.2);
+  border-radius: 1.15rem;
+  box-shadow: 0 1.5rem 3.5rem rgba(0, 10, 25, 0.23);
+  backdrop-filter: blur(12px);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+.research-highlight-card:hover {
+  transform: translateY(-0.35rem);
+  border-color: rgba(235, 166, 76, 0.72);
+  box-shadow: 0 1.8rem 4rem rgba(0, 10, 25, 0.36);
+}
+.research-highlight-card > a {
+  display: grid;
+  grid-template-rows: 43% 57%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+.research-highlight-image {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+  background: #dbe5ed;
+}
+.research-highlight-image::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 45%;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(to bottom, transparent, rgba(7,29,54,.35));
+}
+.research-highlight-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+.research-highlight-card:hover img { transform: scale(1.035); }
+.research-highlight-copy {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 1.15rem 1.25rem 1.25rem;
+  border-top: 3px solid #eba64c;
+}
+.research-highlight-meta {
+  margin: 0 0 0.55rem;
+  color: #83e5df;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.research-highlight-copy h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.05rem, 1.45vw, 1.28rem);
+  line-height: 1.17;
+}
+.research-highlight-copy > p:not(.research-highlight-meta) {
+  display: -webkit-box;
+  margin: 0.72rem 0 0;
+  overflow: hidden;
+  color: #c6d7e7;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.research-highlight-copy span {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  color: #f0b45f;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.research-highlight-card-placeholder {
+  border-style: dashed;
+  background:
+    linear-gradient(145deg, rgba(34,166,161,.13), rgba(235,166,76,.11)),
+    rgba(8,37,65,.75);
+}
+.research-highlights-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  color: #9db5c9;
+  font-size: 0.82rem;
+}
+.research-highlights-footer p { margin: 0; }
+.research-highlights-footer a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.research-highlights-footer a span { color: #eba64c; }
+
+@media (max-width: 760px) {
+  .research-highlights-heading { grid-template-columns: 1fr; gap: 0.85rem; }
+  .research-highlights-track { grid-auto-columns: min(84vw, 21rem); }
+  .research-highlights-footer { align-items: flex-start; flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .research-highlight-card,
+  .research-highlight-card img { transition: none; }
+}
+/* === RESEARCH HIGHLIGHTS V2 END === */
+
+/* === RESEARCH CARD DESCRIPTION FIX START === */
+
+/*
+  The original square cards did not leave enough vertical room for long paper
+  titles plus their summaries. These overrides make each card slightly taller,
+  reduce the image area, and reserve three lines for the description.
+*/
+
+.research-highlights-track {
+  grid-auto-columns: minmax(19rem, 23.5rem);
+}
+
+.research-highlight-card {
+  aspect-ratio: auto;
+  min-height: 34rem;
+}
+
+.research-highlight-card > a {
+  grid-template-rows: 35% 65%;
+}
+
+.research-highlight-copy {
+  padding: 1.05rem 1.25rem 1.2rem;
+}
+
+.research-highlight-copy h3 {
+  font-size: clamp(1rem, 1.25vw, 1.18rem);
+  line-height: 1.16;
+}
+
+.research-highlight-copy > p:not(.research-highlight-meta) {
+  display: -webkit-box;
+  margin-top: 0.7rem;
+  overflow: hidden;
+  color: #c6d7e7;
+  font-size: 0.86rem;
+  line-height: 1.48;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.research-highlight-copy span {
+  padding-top: 0.65rem;
+}
+
+@media (max-width: 760px) {
+  .research-highlight-card {
+    min-height: 32rem;
+  }
+}
+
+.research-highlight-authors{
+    margin:0.4rem 0 0.7rem;
+    font-size:0.82rem;
+    color:#83e5df;
+    font-style:italic;
+}
+/* === RESEARCH CARD DESCRIPTION FIX END === */

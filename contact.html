@@ -48,99 +48,126 @@
 </header>
 
 <main id="main-content">
-<section class="page-hero"><div class="container narrow"><p class="eyebrow">Contact</p><h1>Get in Touch</h1><p class="lead">We'd love to hear from you. Contact the Shen Laboratory about research collaborations, opportunities to join the lab, software, publications, or general inquiries.s.</p></div></section>
-<section class="section"><div class="container contact-grid">
-<div><h2>Get in Touch</h2><div class="contact-list"><div><span>Email</span><a href="mailto:fcaballeromancia@umaryland.edu">jana.shen@rx.umaryland.edu</a></div><div><span>Institution</span><p>University of Maryland School of Pharmacy<br>Department of Pharmaceutical Sciences</p></div><div><span>Website</span><a href="https://feremi192003.github.io/shen-lab-website/">Shen Laboratory website</a></div>
-<form id="contact-form" class="contact-form">
-  <h2>Message the lab</h2>
+<section class="page-hero"><div class="container narrow"><p class="eyebrow">Contact</p><h1>Get in Touch</h1><p class="lead">We'd love to hear from you. Contact the Shen Laboratory about research collaborations, opportunities to join the lab, software, publications, or general inquiries.</p></div></section>
+<section class="section">
+  <div class="container contact-grid">
 
-  <label for="contact-name">
-    <span>Name</span>
-    <input
-      id="contact-name"
-      name="name"
-      type="text"
-      autocomplete="name"
-      maxlength="100"
-      required
-    >
-  </label>
+    <div>
+      <h2>Get in Touch</h2>
 
-  <label for="contact-email">
-    <span>Email</span>
-    <input
-      id="contact-email"
-      name="email"
-      type="email"
-      autocomplete="email"
-      maxlength="254"
-      required
-    >
-  </label>
+      <div class="contact-list">
+        <div>
+          <span>Email</span>
+          <a href="mailto:fcaballeromancia@umaryland.edu">
+            fcaballeromancia@umaryland.edu
+          </a>
+        </div>
 
-  <label for="contact-topic">
-    <span>Topic</span>
-    <select id="contact-topic" name="topic" required>
-      <option value="Research collaboration">
-        Research collaboration
-      </option>
-      <option value="Prospective student">
-        Prospective student
-      </option>
-      <option value="Postdoctoral position">
-        Postdoctoral position
-      </option>
-      <option value="Software or database">
-        Software or database
-      </option>
-      <option value="Other">
-        Other
-      </option>
-    </select>
-  </label>
+        <div>
+          <span>Institution</span>
+          <p>
+            University of Maryland School of Pharmacy<br>
+            Department of Pharmaceutical Sciences
+          </p>
+        </div>
 
-  <label for="contact-message">
-    <span>Message</span>
-    <textarea
-      id="contact-message"
-      name="message"
-      rows="6"
-      maxlength="5000"
-      required
-    ></textarea>
-  </label>
+        <div>
+          <span>Website</span>
+          <a href="https://feremi192003.github.io/shen-lab-website/">
+            Shen Laboratory website
+          </a>
+        </div>
+      </div>
+    </div>
 
-  <div class="form-honeypot" aria-hidden="true">
-    <label for="contact-website">
-      Website
-    </label>
+    <form id="contact-form" class="contact-form">
+      <h2>Message the lab</h2>
 
-    <input
-      id="contact-website"
-      name="website"
-      type="text"
-      tabindex="-1"
-      autocomplete="off"
-    >
+      <label for="contact-name">
+        <span>Name</span>
+        <input
+          id="contact-name"
+          name="name"
+          type="text"
+          autocomplete="name"
+          maxlength="100"
+          required
+        >
+      </label>
+
+      <label for="contact-email">
+        <span>Email</span>
+        <input
+          id="contact-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          maxlength="254"
+          required
+        >
+      </label>
+
+      <label for="contact-topic">
+        <span>Topic</span>
+        <select id="contact-topic" name="topic" required>
+          <option value="Research collaboration">
+            Research collaboration
+          </option>
+          <option value="Prospective student">
+            Prospective student
+          </option>
+          <option value="Postdoctoral position">
+            Postdoctoral position
+          </option>
+          <option value="Software or database">
+            Software or database
+          </option>
+          <option value="Other">
+            Other
+          </option>
+        </select>
+      </label>
+
+      <label for="contact-message">
+        <span>Message</span>
+        <textarea
+          id="contact-message"
+          name="message"
+          rows="6"
+          maxlength="5000"
+          required
+        ></textarea>
+      </label>
+
+      <div class="form-honeypot" aria-hidden="true">
+        <label for="contact-website">Website</label>
+        <input
+          id="contact-website"
+          name="website"
+          type="text"
+          tabindex="-1"
+          autocomplete="off"
+        >
+      </div>
+
+      <button
+        id="contact-submit"
+        class="button button-primary"
+        type="submit"
+      >
+        Send message
+      </button>
+
+      <p
+        id="contact-status"
+        class="contact-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </form>
+
   </div>
-
-  <button
-    id="contact-submit"
-    class="button button-primary"
-    type="submit"
-  >
-    Send message
-  </button>
-
-  <p
-    id="contact-status"
-    class="contact-status"
-    role="status"
-    aria-live="polite"
-  ></p>
-</form>
-
-</div></section>
+</section>
 </main>
 
 <footer class="site-footer">

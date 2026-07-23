@@ -187,3 +187,131 @@ h3{letter-spacing:-.018em}
   .footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* People page */
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 24px;
+  background: #eef3f7;
+}
+
+.member-section {
+  margin-top: 80px;
+}
+
+.member-section .section-heading {
+  margin-bottom: 30px;
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  margin-bottom: 22px;
+  background: #eef3f7;
+}
+
+.person-card .tag {
+  align-self: flex-start;
+  margin-bottom: 8px;
+}
+
+.person-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.person-card p {
+  margin-top: 0;
+}
+
+.opportunity-card {
+  justify-content: center;
+  min-height: 390px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(7, 29, 54, 0.03),
+      rgba(20, 137, 149, 0.08)
+    );
+}
+
+.opportunity-icon {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+  background: #0d416d;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.alumni-section {
+  padding-top: 10px;
+}
+
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #dce5ed;
+}
+
+.alumni-entry {
+  padding: 26px 30px 26px 0;
+  border-bottom: 1px solid #dce5ed;
+}
+
+.alumni-entry:nth-child(even) {
+  padding-right: 0;
+  padding-left: 30px;
+  border-left: 1px solid #dce5ed;
+}
+
+.alumni-entry h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.alumni-entry p {
+  margin: 4px 0;
+}
+
+.alumni-current {
+  color: #52647a;
+}
+
+@media (max-width: 760px) {
+  .member-section {
+    margin-top: 60px;
+  }
+
+  .alumni-list {
+    grid-template-columns: 1fr;
+  }
+
+  .alumni-entry,
+  .alumni-entry:nth-child(even) {
+    padding: 22px 0;
+    border-left: 0;
+  }
+
+  .opportunity-card {
+    min-height: 0;
+  }
+}

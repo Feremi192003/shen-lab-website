@@ -2,7 +2,7 @@
   "meta": {
     "source": "Shen Lab public Zotero library",
     "zoteroGroup": 2660547,
-    "updated": "2026-07-20T10:20:37.814Z",
+    "updated": "2026-07-27T10:50:33.854Z",
     "count": 97
   },
   "publications": [
@@ -425,15 +425,22 @@
     {
       "year": 2021,
       "type": "Book chapter",
-      "title": "Continuous constant pH Molecular Dynamics Simulations of Transmembrane Proteins",
-      "authors": "Huang, Yandong; Henderson, Jack A.; Shen, Jana",
-      "journal": "Methods in Molecular Biology",
+      "title": "Continuous Constant pH Molecular Dynamics Simulations of Transmembrane Proteins",
+      "authors": "Huang, Yandong; Henderson, Jack A.; Shen, Jana; Schmidt-Krey, Ingeborg; Gumbart, James C.",
+      "journal": "Structure and Function of Membrane Proteins",
       "volume": "2302",
       "issue": "",
       "pages": "275-287",
-      "doi": "10.1101/2020.08.06.239772",
-      "url": "http://biorxiv.org/lookup/doi/10.1101/2020.08.06.239772",
-      "topics": []
+      "doi": "10.1007/978-1-0716-1394-8_15",
+      "url": "https://doi.org/10.1007/978-1-0716-1394-8_15",
+      "topics": [
+        "Electrostatics",
+        "G-protein-coupled receptors",
+        "Molecular dynamics",
+        "Proton channels",
+        "Secondary active transporters",
+        "pKa"
+      ]
     },
     {
       "year": 2021,

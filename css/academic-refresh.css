@@ -27,20 +27,21 @@ body.academic-page .site-header {
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(227,230,234,.85);
 }
-body.academic-page .nav-container { min-height: 72px; gap: 24px; }
-body.academic-page .site-logo { gap: 0; }
-body.academic-page .logo-mark { display: none; }
-body.academic-page .logo-text strong {
-  color: var(--academic-ink);
-  font-size: .98rem;
-  letter-spacing: -.01em;
+
+body.academic-page .site-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  text-decoration: none;
 }
-body.academic-page .logo-text small {
-  color: var(--academic-muted);
-  font-size: .67rem;
-  margin-top: 2px;
-  letter-spacing: .015em;
+
+body.academic-page .site-logo-image {
+  display: block;
+  width: 240px;
+  height: auto;
 }
+
 body.academic-page .main-navigation { gap: 22px; font-size: .8rem; font-weight: 650; }
 body.academic-page .main-navigation a { color: #3e4650; padding: 25px 0; }
 body.academic-page .main-navigation a::after {
@@ -459,21 +460,6 @@ body.publications-page [class*="publication-item"] h3 {
   body.publications-page .publication-library { padding-top: 36px; }
 }
 
-/* Easy-to-replace lab logo. Replace images/lab-logo.svg; no HTML edits needed. */
-body.academic-page .site-logo-image {
-  flex: 0 0 auto;
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-}
-body.academic-page .site-logo-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 /* Homepage publication highlights, carried forward from the original site. */
 .academic-publication-grid {
   display: grid;
@@ -559,9 +545,20 @@ body.faculty-profile-page .profile-content-section:last-child { border-bottom: 0
   body.faculty-profile-page .profile-page-grid { grid-template-columns: 1fr; }
   body.faculty-profile-page .profile-hero-photo-wrap { max-width: 360px; }
 }
+
 @media (max-width: 680px) {
-  body.academic-page .site-logo-image { width: 36px; height: 36px; }
-  .academic-publication-grid { grid-template-columns: 1fr; }
+  body.academic-page .site-logo-image {
+    width: 145px;
+    height: auto;
+  }
+
+  body.academic-page .logo-subtitle {
+    font-size: .62rem;
+  }
+
+  .academic-publication-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Final cleanup: remove template numbering and promotional banners. */

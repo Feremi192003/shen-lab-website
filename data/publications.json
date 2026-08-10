@@ -2,8 +2,8 @@
   "meta": {
     "source": "Shen Lab public Zotero library",
     "zoteroGroup": 2660547,
-    "updated": "2026-08-03T10:51:21.417Z",
-    "count": 97
+    "updated": "2026-08-10T08:52:30.025Z",
+    "count": 98
   },
   "publications": [
     {
@@ -121,6 +121,19 @@
       "pages": "",
       "doi": "10.1101/2025.04.17.649309",
       "url": "https://www.biorxiv.org/content/10.1101/2025.04.17.649309v1",
+      "topics": []
+    },
+    {
+      "year": 2025,
+      "type": "Journal article",
+      "title": "Recent Developments in Amber Biomolecular Simulations",
+      "authors": "Case, David A.; Cerutti, David S.; Cruzeiro, Vinícius Wilian D.; Darden, Thomas A.; Duke, Robert E.; Ghazimirsaeed, Mahdieh; Giambaşu, George M.; Giese, Timothy J.; Götz, Andreas W.; Harris, Julie A.; Kasavajhala, Koushik; Lee, Tai-Sung; Li, Zhen; Lin, Charles; Liu, Jian; Miao, Yinglong; Salomon-Ferrrer, Romelia; Shen, Jana; Snyder, Ryan; Swails, Jason; Walker, Ross C.; Wang, Jinan; Wu, Xiongwu; Zeng, Jinzhe; Cheatham III, Thomas E.; Roe, Daniel R.; Roitberg, Adrian; Simmerling, Carlos; York, Darrin M.; Nagan, Maria C.; Merz, Kenneth M., Jr.",
+      "journal": "Journal of Chemical Information and Modeling",
+      "volume": "65",
+      "issue": "15",
+      "pages": "7835-7843",
+      "doi": "10.1021/acs.jcim.5c01063",
+      "url": "https://doi.org/10.1021/acs.jcim.5c01063",
       "topics": []
     },
     {
@@ -1200,7 +1213,7 @@
       "year": 2007,
       "type": "Journal article",
       "title": "Folding Intermediate in the Villin Headpiece Domain Arises from Disruption of a N-Terminal Hydrogen-Bonded Network",
-      "authors": "Khandogin, Jana; Raleigh, Daniel P.; Brooks, III, C. L.",
+      "authors": "Khandogin, Jana; Raleigh, Daniel P.; Brooks, C. L. III",
       "journal": "Journal of the American Chemical Society",
       "volume": "129",
       "issue": "11",
@@ -1213,7 +1226,7 @@
       "year": 2007,
       "type": "Journal article",
       "title": "Linking folding with aggregation in Alzheimer's $\\beta$-amyloid peptides",
-      "authors": "Khandogin, Jana; Brooks, III, Charles L.",
+      "authors": "Khandogin, Jana; Brooks, Charles L. III",
       "journal": "Proceedings of the National Academy of Sciences",
       "volume": "104",
       "issue": "43",
@@ -1226,7 +1239,7 @@
       "year": 2006,
       "type": "Journal article",
       "title": "Exploring atomistic details of pH-dependent peptide folding",
-      "authors": "Khandogin, J.; Chen, J.; Brooks, III, C. L.",
+      "authors": "Khandogin, J.; Chen, J.; Brooks, C. L. III",
       "journal": "Proceedings of the National Academy of Sciences",
       "volume": "103",
       "issue": "49",
@@ -1239,7 +1252,7 @@
       "year": 2006,
       "type": "Journal article",
       "title": "Toward the Accurate First-Principles Prediction of Ionization Equilibria in Proteins <sup>†</sup>",
-      "authors": "Khandogin, Jana; Brooks, III, Charles L.,",
+      "authors": "Khandogin, Jana; Brooks, Charles L., III",
       "journal": "Biochemistry",
       "volume": "45",
       "issue": "31",
@@ -1252,7 +1265,7 @@
       "year": 2005,
       "type": "Journal article",
       "title": "Constant pH Molecular Dynamics with Proton Tautomerism",
-      "authors": "Khandogin, Jana; Brooks, III, Charles L.",
+      "authors": "Khandogin, Jana; Brooks, Charles L. III",
       "journal": "Biophysical Journal",
       "volume": "89",
       "issue": "1",

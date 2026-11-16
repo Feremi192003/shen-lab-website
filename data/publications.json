@@ -2,10 +2,23 @@
   "meta": {
     "source": "Shen Lab public Zotero library",
     "zoteroGroup": 2660547,
-    "updated": "2026-11-09T17:27:30.476Z",
-    "count": 98
+    "updated": "2026-11-16T16:58:53.704Z",
+    "count": 99
   },
   "publications": [
+    {
+      "year": 2026,
+      "type": "Preprint",
+      "title": "High-Performance All-Atom Continuous Constant-pH Molecular Dynamics and Native Asynchronous Replica Exchange in Amber",
+      "authors": "Dayhoff, Guy W.; Shen, Jana",
+      "journal": "bioRxiv",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.64898/2026.11.11.766022",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.11.766022v1",
+      "topics": []
+    },
     {
       "year": 2026,
       "type": "Journal article",
